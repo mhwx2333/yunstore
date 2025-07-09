@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    name: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/yunstrone?serverTimezone=Asia/Shanghai
+    username: "root"
+    password: "001574"
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+server:
+  port: 8090
+
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  type-aliases-package: com.mh.yun.entity
